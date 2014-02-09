@@ -1,0 +1,6 @@
+<h1> AplicaciosrsersersRuby on Rails Dennise</h1>  
+<%= form_tag("/index", method: "get") do %>
+   <%= text_field_tag 'objeto' %>
+   <%= submit_tag 'Traer objeto' %>
+<% end %>
+<p><%= @miObjeto %>
