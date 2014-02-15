@@ -1,0 +1,11 @@
+<h2> El codigo que pertenece a la materia es: </h2>
+<div id="resultados">
+   <% if @codigo %>
+      <% if @materia %>
+         <p> <%= @materia [:nombre] %> <%= @materia [:carrera] %> </p>
+      <% else %>
+         <p> La materia con el código <%= @codigo %> no ha podido ser encontrado. </p>
+      <% end %>
+   <% end %>
+</div>
+<%= link_to 'Back', politecnicos_path %>
