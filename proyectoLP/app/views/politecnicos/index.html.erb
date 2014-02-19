@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Proyecto Ruby Dennise Pintado</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header>
+ <%= image_tag "portada2.jpg", :alt => "maparobot ", :title => "maparobot", :class => "imagen "%>
+</header>
+<div class="contenido">
+<h1>Lista de Estudiantes de Ingenieria en Computación</h1>
+<table >
+  <thead>
+    <tr >
+      <th>Nombres</th>
+      <th>Apellidos</th>
+      <th>Materia</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody >
+    <% @politecnicos.each do |politecnico| %>
+      <tr >
+        <td><%= politecnico.nombre %></td>
+        <td><%= politecnico.apellido %></td>
+        <td><%= politecnico.materia %></td>
+        <td ><%= link_to 'Mostrar ', politecnico %></td>
+        <td><%= link_to 'Editar ', edit_politecnico_path(politecnico) %></td>
+        <td><%= link_to 'Eliminar', politecnico, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+<br>
+
+<%= link_to 'Nuevo Estudiante', new_politecnico_path %>
+</div>
+
+</body>
+</html>

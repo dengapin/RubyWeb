@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Proyecto Ruby Dennise Pintado</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header class="menuhorizontal">
+<ul>
+        <li><a href="welcome/index">Home</a></li>
+        <li><a href="../politecnicos">Lista Estudiantes</li>
+        <li><a href="welcome/index2">FIEC</a></li>
+</ul>
+</header>
+<%= yield %>
+</body>
+</html>

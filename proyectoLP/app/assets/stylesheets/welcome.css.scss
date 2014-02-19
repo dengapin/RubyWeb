@@ -1,0 +1,81 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: blue;
+h1{
+padding:10px;
+margin-left:20px;
+text-align: center;
+color:blue;
+text-shadow: 5px 5px 5px #c69;
+}
+
+.contenido{
+font-size: 100% Helvetica, sans-serif;
+}
+
+body {
+  font-size: 100% Helvetica, sans-serif;
+  background-color: #f2ece4;
+}
+
+.imagen{
+   text-align: center;
+   padding-left:55px
+}
+
+.menuhorizontal {
+border-radius:25px;
+background-color:#dadbdf;
+margin-left:50px;
+margin-right:90px;
+
+}
+
+
+ul
+{
+
+list-style-type:none;
+padding:10px;
+
+overflow:hidden;
+}
+li
+{
+float:left;
+}
+a:link,a:visited
+{
+display:block;
+width:350px;
+font-weight:bold;
+text-align:center;
+text-decoration:none;
+}
+a:hover,a:active
+{
+background-color:#c69;
+}
+
+table, td, th
+{
+padding:5px;
+width:200px;
+}
+td
+{
+height:10px;
+width:100px;
+vertical-align:bottom;
+
+}
+
+
+a:link {text-decoration:none;}
+a:visited {background-color:#FFFF85;background-color:#FFFF85;}
+a:hover {background-color:#FF704D;background-color:#FF704D;}
+a:active {background-color:#FF704D;background-color:#FF704D;}
+
